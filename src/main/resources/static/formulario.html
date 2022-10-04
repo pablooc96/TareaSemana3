@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        
+        <div class="container"> 
+            <div class="navbar">
+               <img src="images/linkinpark.png" class="logo">               
+                    <nav>    
+                         <ul>
+                            <li><a href =home.html>Home</a></li>
+                            <li><a href =formulario.html>Formulario</a></li>
+                            <li><a href =video.html>Videos</a></li>
+                            <li><a href =miembros.html>Miembros</a></li>
+                            <li><a href =audio.html>Canciones</a></li>
+                            <li><a href =album.html>Albumes</a></li>
+                            <li><a href =about.html>Sobre la banda</a></li>
+                         </ul>
+                    </nav>    
+        </div>
+        <div>Formulario</div>
+        
+        <h2>SE UN MIEMBRO, UNETE EN EL SIGUIENTE REGISTRO!</h2>
+        <form action="registro.jsp">
+            
+            <label>Nombre completo: </label>
+            <input type="text" 
+                   name="Nombre" 
+                   placeholder=""/>
+            <br/>
+            
+            <label>Correo: </label>
+            <input type="email" 
+                   name="correo" 
+                   placeholder="example@gmail.com"/>
+            <br/>
+            
+            <label>Cancion(es) favorita: </label><br/>
+            
+            One More Light <input type="checkbox" 
+                   name="1"/>
+            In the End <input type="checkbox"
+                   name="2"/>
+            Crawling <input type="checkbox"
+                   name="3"/>
+            <br/>
+                        
+            <label>Edad: </label>
+            <input type="number"
+                   name="edad" min="1" max="99"/>
+            <br/>
+            
+            <label>Fecha de inscripcion: </label>
+            <input type="date"
+                   name="inscripcion"/>
+            <br/>
+            
+            <label>Concierto favorito: </label>
+            One More light<input type="radio" name="color" value="one"/>
+            Conmemoracion<input type="radio" name="color" value="conm"/>
+            Wacken<input type="radio" name="color" value="wacken"/>
+            <br/>
+
+            <br/>
+            <input type="submit" name="Enviar" value="Registrar"/>
+        </form>
+    </body>
+</html>
